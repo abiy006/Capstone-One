@@ -88,7 +88,7 @@ The capstone is able to function (responsive to) both on the mobile and desktop 
 
 ### Key Features <a name="key-features"></a>
 
-- **[linter_implementation_with_html_css_javascript]**
+- **[linter_implementation_with_html_css_javaScript]**
 - **[linter_implementation_with_gitignore]**
 - **[implementing_standard_readme_file]**
 - **[implementing_figma_design_background]**
