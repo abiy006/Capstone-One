@@ -29,45 +29,45 @@ headerTopUl.style.gap = '1rem';
 headerTopUl.style.marginRight = '10%';
 headerTopUl.setAttribute('class', 'header-top-ul');
 for (let i = 0; i < 5; i += 1) {
-    if (i === 0) {
-        const headerTopUlLi = document.createElement('img');
-        headerTopUlLi.style.display = 'flex';
-        headerTopUlLi.setAttribute('class', 'header-top-ul-li');
-        headerTopUlLi.src = './Images/facebook-icon.svg';
-        headerTopUlLi.style.height = '20px';
-        headerTopUl.appendChild(headerTopUlLi);
-    } else if (i === 1) {
-        const headerTopUlLi = document.createElement('img');
-        headerTopUlLi.style.display = 'flex';
-        headerTopUlLi.setAttribute('class', 'header-top-ul-li');
-        headerTopUlLi.src = './Images/twitter.svg';
-        headerTopUlLi.style.height = '20px';
-        headerTopUl.appendChild(headerTopUlLi);
-    } else if (i === 2) {
-        const headerTopUlLi = document.createElement('li');
-        headerTopUlLi.style.display = 'flex';
-        headerTopUlLi.setAttribute('class', 'header-top-ul-li');
-        headerTopUlLi.textContent = 'English';
-        headerTopUlLi.style.color = '#fff';
-        headerTopUlLi.style.fontFamily = 'Lato, sans-serif';
-        headerTopUl.appendChild(headerTopUlLi);
-    } else if (i === 3) {
-        const headerTopUlLi = document.createElement('li');
-        headerTopUlLi.style.display = 'flex';
-        headerTopUlLi.setAttribute('class', 'header-top-ul-li');
-        headerTopUlLi.textContent = 'My Page';
-        headerTopUlLi.style.color = '#fff';
-        headerTopUlLi.style.fontFamily = 'Lato, sans-serif';
-        headerTopUl.appendChild(headerTopUlLi);
-    } else if (i === 4) {
-        const headerTopUlLi = document.createElement('li');
-        headerTopUlLi.style.display = 'flex';
-        headerTopUlLi.setAttribute('class', 'header-top-ul-li');
-        headerTopUlLi.textContent = 'Logout';
-        headerTopUlLi.style.color = '#fff';
-        headerTopUlLi.style.fontFamily = 'Lato, sans-serif';
-        headerTopUl.appendChild(headerTopUlLi);
-    }
+  if (i === 0) {
+    const headerTopUlLi = document.createElement('img');
+    headerTopUlLi.style.display = 'flex';
+    headerTopUlLi.setAttribute('class', 'header-top-ul-li');
+    headerTopUlLi.src = './Images/facebook-icon.svg';
+    headerTopUlLi.style.height = '20px';
+    headerTopUl.appendChild(headerTopUlLi);
+  } else if (i === 1) {
+    const headerTopUlLi = document.createElement('img');
+    headerTopUlLi.style.display = 'flex';
+    headerTopUlLi.setAttribute('class', 'header-top-ul-li');
+    headerTopUlLi.src = './Images/twitter.svg';
+    headerTopUlLi.style.height = '20px';
+    headerTopUl.appendChild(headerTopUlLi);
+  } else if (i === 2) {
+    const headerTopUlLi = document.createElement('li');
+    headerTopUlLi.style.display = 'flex';
+    headerTopUlLi.setAttribute('class', 'header-top-ul-li');
+    headerTopUlLi.textContent = 'English';
+    headerTopUlLi.style.color = '#fff';
+    headerTopUlLi.style.fontFamily = 'Lato, sans-serif';
+    headerTopUl.appendChild(headerTopUlLi);
+  } else if (i === 3) {
+    const headerTopUlLi = document.createElement('li');
+    headerTopUlLi.style.display = 'flex';
+    headerTopUlLi.setAttribute('class', 'header-top-ul-li');
+    headerTopUlLi.textContent = 'My Page';
+    headerTopUlLi.style.color = '#fff';
+    headerTopUlLi.style.fontFamily = 'Lato, sans-serif';
+    headerTopUl.appendChild(headerTopUlLi);
+  } else if (i === 4) {
+    const headerTopUlLi = document.createElement('li');
+    headerTopUlLi.style.display = 'flex';
+    headerTopUlLi.setAttribute('class', 'header-top-ul-li');
+    headerTopUlLi.textContent = 'Logout';
+    headerTopUlLi.style.color = '#fff';
+    headerTopUlLi.style.fontFamily = 'Lato, sans-serif';
+    headerTopUl.appendChild(headerTopUlLi);
+  }
 }
 headerTop.appendChild(headerTopUl);
 
@@ -81,11 +81,11 @@ headerBottom.style.marginBottom = '1rem';
 headerBottom.style.gap = '1rem';
 headerBottom.setAttribute('class', 'header-bottom');
 
-const headerBottomDiv= document.createElement('div');
+const headerBottomDiv = document.createElement('div');
 headerBottomDiv.style.display = 'flex';
-headerBottomDiv.style.width = '100%'
+headerBottomDiv.style.width = '100%';
 headerBottomDiv.style.marginLeft = '10%';
-headerBottomDiv.style.gap = '1rem'
+headerBottomDiv.style.gap = '1rem';
 headerBottomDiv.setAttribute('class', 'header-bottom-div');
 
 const headerBottomDiv1 = document.createElement('div');
@@ -98,8 +98,8 @@ headerBottomImg.setAttribute('class', 'header-bottom-img');
 headerBottomImg.src = './Images/cc.svg';
 headerBottomImg.style.height = '3rem';
 headerBottomImg.addEventListener('click', () => {
-    location.href = '/index.html';
-  });
+  window.location.href = '/index.html';
+});
 headerBottomDiv1.appendChild(headerBottomImg);
 
 const headerBottomDiv2 = document.createElement('div');
@@ -112,16 +112,16 @@ headerBottomTxt1.style.display = 'flex';
 headerBottomTxt1.setAttribute('class', 'header-bottom-txt1');
 headerBottomTxt1.textContent = 'CC Global';
 headerBottomTxt1.addEventListener('click', () => {
-    location.href = '/index.html';
-  });
+  window.location.href = '/index.html';
+});
 
 const headerBottomTxt2 = document.createElement('p');
 headerBottomTxt2.style.display = 'flex';
 headerBottomTxt2.setAttribute('class', 'header-bottom-txt2');
 headerBottomTxt2.textContent = 'Submit 2015';
 headerBottomTxt2.addEventListener('click', () => {
-    location.href = '/index.html';
-  });
+  window.location.href = '/index.html';
+});
 
 headerBottomDiv2.appendChild(headerBottomTxt1);
 headerBottomDiv2.appendChild(headerBottomTxt2);
@@ -138,37 +138,27 @@ headerBottomUl.style.gap = '2rem';
 headerBottomUl.style.justifyContent = 'end';
 headerBottomUl.setAttribute('class', 'header-bottom-ul');
 for (let i = 0; i < 6; i += 1) {
-    const headerBottomUlLi = document.createElement('li');
-    headerBottomUlLi.style.display = 'flex';
-    headerBottomUlLi.setAttribute('class', 'header-top-ul-li');
-    if (i === 0) {
-
-        headerBottomUlLi.textContent = 'About';
-        headerBottomUlLi.style.color = '#ec5242';
-        
-    } else if (i === 1) {
-        headerBottomUlLi.textContent = 'Program';
-
-    } else if (i === 2) {
-
-        headerBottomUlLi.textContent = 'Join';
-
-    } else if (i === 3) {
-
-        headerBottomUlLi.textContent = 'Sponsor';
-
-    } else if (i === 4) {
-
-        headerBottomUlLi.textContent = 'News';
-
-    } else if (i === 5) {
-
-        headerBottomUlLi.textContent = 'CC Campain';
-        headerBottomUlLi.style.padding = '0.5rem';
-        headerBottomUlLi.style.color = '#ec5242';
-        headerBottomUlLi.style.border = '3px solid #ec5242';
-    }
-    headerBottomUl.appendChild(headerBottomUlLi);
+  const headerBottomUlLi = document.createElement('li');
+  headerBottomUlLi.style.display = 'flex';
+  headerBottomUlLi.setAttribute('class', 'header-top-ul-li');
+  if (i === 0) {
+    headerBottomUlLi.textContent = 'About';
+    headerBottomUlLi.style.color = '#ec5242';
+  } else if (i === 1) {
+    headerBottomUlLi.textContent = 'Program';
+  } else if (i === 2) {
+    headerBottomUlLi.textContent = 'Join';
+  } else if (i === 3) {
+    headerBottomUlLi.textContent = 'Sponsor';
+  } else if (i === 4) {
+    headerBottomUlLi.textContent = 'News';
+  } else if (i === 5) {
+    headerBottomUlLi.textContent = 'CC Campain';
+    headerBottomUlLi.style.padding = '0.5rem';
+    headerBottomUlLi.style.color = '#ec5242';
+    headerBottomUlLi.style.border = '3px solid #ec5242';
+  }
+  headerBottomUl.appendChild(headerBottomUlLi);
 }
 headerBottom.appendChild(headerBottomUl);
 
@@ -266,7 +256,7 @@ body1txtdiv.style.width = '100%';
 const body1txt3 = document.createElement('p');
 body1txt3.style.display = 'flex';
 body1txt3.setAttribute('class', 'body1-txt');
-body1txt3.textContent = 'A joyful celebration believing in the value of openess joyful    elieving in the value of openess joyful celebration believing in the value of openess      celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess ';
+body1txt3.textContent = 'A joyful celebration believing in the value of openess joyful  elieving in the value of openess joyful celebration believing in the value of openess  celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess ';
 body1txt3.style.fontFamily = 'Lato, sans-serif';
 body1txt3.style.fontSize = '12px';
 body1txt3.style.width = '70%';
@@ -358,7 +348,7 @@ body2Div1txt2.style.display = 'flex';
 body2Div1txt2.style.justifyContent = 'center';
 body2Div1txt2.style.alignItems = 'center';
 body2Div1txt2.setAttribute('class', 'body2-txt1');
-body2Div1txt2.textContent = "Lorem inosborum quisum quisqunosboruisum quisqunm voluptatem sit. inosborum quisum quisqunosborum quisquam aliquam voluptatem sit. inosborum quisum quisqunosborum quisquam aliquam voluptatem sit.";
+body2Div1txt2.textContent = 'Lorem inosborum quisum quisqunosboruisum quisqunm voluptatem sit. inosborum quisum quisqunosborum quisquam aliquam voluptatem sit. inosborum quisum quisqunosborum quisquam aliquam voluptatem sit.';
 body2Div1txt2.style.color = '#272a31';
 body2Div1txt2.style.width = '50%';
 body2Div1txt2.style.fontFamily = 'Lato, sans-serif';
@@ -418,7 +408,6 @@ secTwoPart2Lev1.style.marginBottom = '2rem';
 secTwoPart2Lev1.style.marginTop = '2rem';
 secTwoPart2Lev1.setAttribute('class', 'section2-part2-level1');
 
-
 const secTwoPart1Lev1Div1 = document.createElement('div');
 secTwoPart1Lev1Div1.style.display = 'flex';
 secTwoPart1Lev1Div1.style.flexDirection = 'column';
@@ -437,7 +426,6 @@ secTwoPart1Lev1Div1Img1.style.fontSize = '2rem';
 secTwoPart1Lev1Div1Img1.style.alignItems = 'center';
 secTwoPart1Lev1Div1Img1.setAttribute('class', 'footer2-div1-img');
 secTwoPart1Lev1Div1.appendChild(secTwoPart1Lev1Div1Img1);
-
 
 const secTwoPart2Lev1txt1 = document.createElement('p');
 secTwoPart2Lev1txt1.style.display = 'flex';
@@ -460,7 +448,7 @@ const secTwoPart2Lev1txt2 = document.createElement('p');
 secTwoPart2Lev1txt2.style.display = 'flex';
 secTwoPart2Lev1txt2.style.justifyContent = 'center';
 secTwoPart2Lev1txt2.setAttribute('class', 'body2-txt1');
-secTwoPart2Lev1txt2.textContent = "Take a look at the last two CC Global Summits which took place in Buenos and Aires and in Warsaw.";
+secTwoPart2Lev1txt2.textContent = 'Take a look at the last two CC Global Summits which took place in Buenos and Aires and in Warsaw.';
 secTwoPart2Lev1txt2.style.color = '#272a31';
 secTwoPart2Lev1txt2.style.fontFamily = 'Lato, sans-serif';
 secTwoPart2Lev1txt2.style.fontSize = '1rem';
@@ -468,8 +456,6 @@ secTwoPart2Lev1txt2.style.fontStyle = 'normal';
 secTwoPart2Lev1.appendChild(secTwoPart2Lev1txt2);
 
 sectionTwoPart2.appendChild(secTwoPart2Lev1);
-
-
 
 const secTwoPart2Lev2 = document.createElement('div');
 secTwoPart2Lev2.style.display = 'flex';
@@ -540,8 +526,8 @@ footerSectionPart2.style.marginBottom = '2rem';
 footerSectionPart2.style.justifyContent = 'center';
 footerSectionPart2.style.alignItems = 'center';
 footerSectionPart2.style.gap = '2rem';
-footerSectionPart2.style.marginBottom= '3rem';
-footerSectionPart2.style.marginTop= '3rem';
+footerSectionPart2.style.marginBottom = '3rem';
+footerSectionPart2.style.marginTop = '3rem';
 footerSectionPart2.setAttribute('class', 'footer-section-part2');
 
 const footer2Div1 = document.createElement('div');
