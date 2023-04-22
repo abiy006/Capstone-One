@@ -1,5 +1,5 @@
-import data1 from '../data.js';
-import data3 from '../data2.js';
+import data1 from './data.js';
+import data3 from './data2.js';
 
 console.log(data1);
 console.log(data3);
